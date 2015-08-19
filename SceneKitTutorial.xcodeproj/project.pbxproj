@@ -13,6 +13,7 @@
 		27539FFB1B843C1200EFE09F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27539FFA1B843C1200EFE09F /* Images.xcassets */; };
 		27539FFE1B843C1200EFE09F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27539FFC1B843C1200EFE09F /* LaunchScreen.xib */; };
 		2753A00A1B843C1200EFE09F /* SceneKitTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753A0091B843C1200EFE09F /* SceneKitTutorialTests.swift */; };
+		2753A0141B843D0F00EFE09F /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753A0131B843D0F00EFE09F /* SceneKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2753A0031B843C1200EFE09F /* SceneKitTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneKitTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2753A0081B843C1200EFE09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2753A0091B843C1200EFE09F /* SceneKitTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitTutorialTests.swift; sourceTree = "<group>"; };
+		2753A0131B843D0F00EFE09F /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2753A0141B843D0F00EFE09F /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		27539FE51B843C1200EFE09F = {
 			isa = PBXGroup;
 			children = (
+				2753A0131B843D0F00EFE09F /* SceneKit.framework */,
 				27539FF01B843C1200EFE09F /* SceneKitTutorial */,
 				2753A0061B843C1200EFE09F /* SceneKitTutorialTests */,
 				27539FEF1B843C1200EFE09F /* Products */,
