@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         lightNode.light = light
         lightNode.position = SCNVector3(x: 1.5, y: 1.5, z: 1.5)
         
-        let cubeGeometry = SCNBox(width: 1.0, height: 1.0, length: 1.0, chamferRadius: 0.0)
+        let cubeGeometry = SCNBox(width: 1.0, height: 1.0, length: 1.0, chamferRadius: 0.1)
         let cubeNode = SCNNode(geometry: cubeGeometry)
         
         let planeGeometry = SCNPlane(width: 100.0, height: 100.0)
@@ -38,13 +38,13 @@ class ViewController: UIViewController {
         planeNode.eulerAngles = SCNVector3(x: GLKMathDegreesToRadians(-90), y: 0, z: 0)
         planeNode.position = SCNVector3(x: 0, y: -0.5, z: 0)
         
-        let redMaterial = SCNMaterial()
-        redMaterial.diffuse.contents = UIColor.redColor()
-        cubeGeometry.materials = [redMaterial]
-        
         let greenMaterial = SCNMaterial()
         greenMaterial.diffuse.contents = UIColor.greenColor()
-        planeGeometry.materials = [greenMaterial]
+        cubeGeometry.materials = [greenMaterial]
+        
+        let blueMaterial = SCNMaterial()
+        blueMaterial.diffuse.contents = UIColor.blueColor()
+        planeGeometry.materials = [blueMaterial]
         
         scene.rootNode.addChildNode(lightNode)
         scene.rootNode.addChildNode(cameraNode)
